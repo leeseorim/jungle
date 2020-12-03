@@ -15,6 +15,51 @@
 			}
 
 			.container{width:800px; margin:0 auto;text-align:center}
+
+			/* .section.box ul li{display: inline-block; }
+			.section.box ul li:first-child{color: red;} /*li 중 첫번째
+			.section.box ul li:nth-child(2){color: blue;}/*li 중 두번째
+			.section.box ul > * {border: 1px solid #333;} 모든선택자 */
+			
+			/* box */
+			.section.box .box{
+				width: 200px;
+				height: 100px;
+				background: #ff0000;
+				float: left;
+				list-style: none;
+				line-height: 100px;
+			}
+			.section.box .box + .box{
+				margin-left: 100px;
+			}
+			.section.box .box:nth-child(2){
+				background: #000;
+				color: white;
+			}
+			.section.box .box:hover{
+				background:green;
+			}
+			.section.box ul{ padding: 0;}
+			.section.box:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			/* link */
+			.section.link > div{
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				border: 5px solid #ff0000;
+			}
+			/* text */
+			.section.txt{
+				background: #eee;
+				text-align: left;
+				padding: 20px;
+				line-height: 30px;
+			}
 		</style>
 
   </head>
@@ -26,13 +71,13 @@
 				<div class="section box">
 					<ul>
 						<li class="box">
-							<a href="#">box1</a>
+							box1
 						</li>
 						<li class="box">
-							<a href="#">box2</a>
+							box2
 						</li>
 						<li class="box">
-							<a href="#">box3</a>
+							box3
 						</li>
 					</ul>
 				</div>
