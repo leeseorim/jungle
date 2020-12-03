@@ -1,37 +1,187 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>html</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<style>
-			body, h1{margin:0}
-			a{color:#fff}
 
-			.header{
-				background:#333;
-				color:#fff;
-				padding:20px;
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>html</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		body,
+		h1 {
+			margin: 0
+		}
+
+		a {
+			color: #fff
+		}
+
+		.header {
+			background: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		.header:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.header h1 {
+			float: left;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.header .nav {
+			float: right;
+		}
+
+		.header .nav>a {
+			margin-left: 20px;
+		}
+
+		.container {
+			padding: 20px;
+		}
+
+		.visual {
+			text-align: center;
+			padding-top: 50px;
+			height: 200px;
+			background: #3f51b5;
+		}
+
+		.visual .unit .txt_tit {
+			font-size: 50px;
+			color: orange;
+		}
+
+		.visual .unit .txt_subs_1 {
+			font-size: 20px;
+		}
+
+		.visual .unit {
+			position: absolute;
+			width: 100%;
+			transform: translateY(100px);
+			opacity: 0;
+			/* animation: rolling_ani1 5s infinite; */
+		}
+
+		.visual .unit:nth-child(1) {
+			animation: rolling_ani 10s infinite;
+		}
+
+		@keyframes rolling_ani {
+			0% {
+				opacity: 0;
+				transform: translateY(100px)
 			}
-		</style>
 
-  </head>
-  <body>
-		<div class="wrap">
-			<div class="header">
-				<h1>logo</h1>
-				<div class="nav">
-					<a href="#">menu1</a>
-					<a href="#">menu2</a>
-					<a href="#">menu3</a>
+			12% {
+				opacity: 1;
+				transform: translateY(0)
+			}
+
+			37% {
+				opacity: 1;
+				transform: translateY(0)
+			}
+
+			50% {
+				opacity: 0;
+				transform: translateY(100px)
+			}
+		}
+
+		.visual .unit:nth-child(2) {
+			animation: rolling_ani2 10s infinite;
+		}
+
+		@keyframes rolling_ani2 {
+			50% {
+				opacity: 0;
+				transform: translateY(100px)
+			}
+
+			62% {
+				opacity: 1;
+				transform: translateY(0)
+			}
+
+			87% {
+				opacity: 1;
+				transform: translateY(0)
+			}
+
+			100% {
+				opacity: 0;
+				transform: translateY(100px)
+			}
+		}
+		.box{
+			text-align: center;
+			height: 300px;
+			background: #EEEEEE;
+		}
+		.box > span{
+			background:#999999;
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			margin: 100px 20px 0 20px;
+			transition: all 0.5s;
+		}
+		.box > span:hover{
+			transform: scale(2) rotate(45deg);
+			background: #870000;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="header">
+			<h1>logo</h1>
+			<div class="nav">
+				<a href="#">menu1</a>
+				<a href="#">menu2</a>
+				<a href="#">menu3</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="section visual">
+				<div class="unit">
+					<strong class="txt_tit">첫번째 문구</strong>
+					<p class="txt_subs_1">첫번째 문구의 애니메이션 예제 입니다.</p>
+					<p class="txt_subs_2">첫번째 문구의 애니메이션 예제 입니다.</p>
+				</div>
+				<div class="unit">
+					<strong class="txt_tit">두번째 문구</strong>
+					<p class="txt_subs_1">두번째 문구의 애니메이션 예제 입니다.</p>
+					<p class="txt_subs_2">두번째 문구의 애니메이션 예제 입니다.</p>
 				</div>
 			</div>
-			<div class="container">
-					<div class="section"></div>
-					<div class="aside"></div>
+			<!-- section visual -->
+			<div class="section box">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-			<div class="footer"></div>
+			<!-- section box -->
+			<div class="section tb1">
+
+			</div>
+			<!-- section tb1 -->
 		</div>
-  </body>
+		<!-- container -->
+		<div class="footer">
+			
+		</div>
+	</div>
+</body>
+
 </html>
