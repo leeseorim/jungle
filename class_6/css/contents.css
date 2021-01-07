@@ -1,3 +1,11 @@
+.section{
+	display: none;
+}
+.on{
+	display: block;
+}
+
+/* 초기화면 */
 .box_intro{
 	padding:30px 0;
 	text-align: center;
@@ -11,7 +19,7 @@
 	font-size:20px;
 	cursor: pointer;
 }
-
+/* 자리선택 */
 .section.reservation{
 	width:590px;
 	margin:0 auto;
@@ -44,6 +52,8 @@
 .section.reservation .unit button:hover{
 	background:#78ab55;
 }
+
+/* 예약자리 표현 */
 .section.reservation .unit button[disabled],
 .section.reservation .unit button[disabled]:hover
 {
@@ -52,6 +62,8 @@
   text-indent: -9999px;
   cursor:default;
 }
+
+/* 선택된 자리 */
 .section.reservation .unit button.select{
 	background: #FF5F40;
   color:#fff;
