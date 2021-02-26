@@ -39,6 +39,9 @@ $(function(){
             
             })   
 
+        $("#section2 .inner .wrap3 .port").css({'overflow': 'scroll'});
+            
+
     });
 
     $("#section2 .inner .wrap3 .port-box2 > a").on("click",function(){
