@@ -28,21 +28,18 @@ $(function(){
         $("#section2 .inner .wrap3 .port.port1").addClass("on");
         $("#section2 .back").addClass("on")
 
+        $("html, body").css({'overflow': 'hidden', 'height': '100%', 'position':'fixed'})
+        $("html, body").on('scroll touchmove mousewheel', function(e){
+
+            e.preventDefault();
+            
+            e.stopPropagation(); 
+            
+            return false;
+            
+            })    
+
     });
-
-    $("html, body").css({'overflow': 'hidden', 'height': '100%', 'position':'fixed'})
-    $("html, body").on('scroll touchmove mousewheel', function(e){
-
-        e.preventDefault();
-            
-        e.stopPropagation(); 
-            
-        return false;
-            
-    })    
-        
-    $("#section2 .inner .wrap3 .port.port1.on").css({'overflow': 'scroll', 'height': '580px', 'position':'absolute'});
-    $("#section2 .inner .wrap3 .port.port1.on").off('scroll touchmove mousewheel');
 
 
 
@@ -61,8 +58,6 @@ $(function(){
             return false;
             
             })   
-
-        $("#section2 .inner .wrap3 .port").off('scroll touchmove mousewheel');
 
     });
 
