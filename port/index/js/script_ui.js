@@ -67,7 +67,7 @@ $(function(){
         $(this).removeClass("on");  
         $("#section2 .back").removeClass("on")
 
-        $("html, body").unbind('scroll touchmove mousewheel');    
+        $("html, body").off('scroll touchmove mousewheel');    
     });
     
 
