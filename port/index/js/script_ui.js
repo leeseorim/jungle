@@ -39,7 +39,7 @@ $(function(){
             
             })    
             
-        $("#section2 .inner .wrap3 .port").unbind('scroll touchmove');
+        // $("#section2 .inner .wrap3 .port").unbind('scroll touchmove mousewheel');
 
     });
 
@@ -61,7 +61,7 @@ $(function(){
             
             })   
 
-        $("#section2 .inner .wrap3 .port").unbind('scroll touchmove');
+        // $("#section2 .inner .wrap3 .port").unbind('scroll touchmove mousewheel');
 
     });
 
