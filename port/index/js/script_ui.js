@@ -29,7 +29,7 @@ $(function(){
         $("#section2 .back").addClass("on")
 
         $("html, body").css({'overflow': 'hidden', 'height': '100%', 'position':'fixed'})
-        $("html, body").on('scroll touchmove mousewheel', function(e){
+        $("html, body").bind('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
@@ -49,7 +49,7 @@ $(function(){
         $("#section2 .back").addClass("on")
     
         $("html, body").css({'overflow': 'hidden', 'height': '100%', 'position':'fixed'})
-        $("html, body").on('scroll touchmove mousewheel', function(e){
+        $("html, body").bind('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
@@ -67,7 +67,7 @@ $(function(){
         $(this).removeClass("on");  
         $("#section2 .back").removeClass("on")
 
-        $("html, body").off('scroll touchmove mousewheel');    
+        $("html, body").unbind('scroll touchmove mousewheel');    
     });
     
 
