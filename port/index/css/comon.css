@@ -361,7 +361,7 @@
 
 #section2 .inner .wrap3 .port.on{
     display: block;
-    animation: slide 1s linear;
+    animation: slide 1s linear infinite;
 
 }
 
