@@ -22,10 +22,10 @@ $(function(){
     });
 
 
-    $("#section2 .inner .wrap3 .port-box .port").hide();
 
-    $("#section2 .inner .wrap3 .port-box.port-box1").on("click",function(){
-        $("#section2 .inner .wrap3 .port-box .port.port1").toggle("slow");
+    $("#section2 .inner .wrap3 .port-box1 > a").on("click",function(){
+        $("#section2 .inner .wrap3 .port.port1").addClass("on");
+        
         $("body").on('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
@@ -34,12 +34,12 @@ $(function(){
             
             return false;
             
-            })
-            
+            })   
+
     });
 
-    $("#section2 .inner .wrap3 .port-box.port-box2").on("click",function(){
-        $("#section2 .inner .wrap3 .port-box .port.port2").toggle("slow");
+    $("#section2 .inner .wrap3 .port-box2 > a").on("click",function(){
+        $("#section2 .inner .wrap3 .port.port2").addClass("on");
         $("body").on('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
@@ -48,10 +48,16 @@ $(function(){
             
             return false;
             
-            })
-            
+            })   
+
     });
 
+    $("#section2 .inner .wrap3 .port").click(function(){
+
+        $(this).removeClass("on");  
+
+        $("body").off('scroll touchmove mousewheel');    
+    });
     
 
 });

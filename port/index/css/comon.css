@@ -287,21 +287,21 @@
     width: 160px;
     margin: 0 30px;
     box-sizing: border-box;
-
 }
 
 #section2 .inner .wrap3 .port-box > a{
-    background-color: brown;
     display: block;
     width: 160px;
     height: 200px;
     margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
 }
-
-#section2 .inner .wrap3 .port-box > a > img{
-    width: 100%;
+#section2 .inner .wrap3 .port-box1 > a{
+    background-image:url(../img/port-img1.jpg);
+    background-size: cover;
+}
+#section2 .inner .wrap3 .port-box2 > a{
+    background-image:url(../img/port-img2.jpg);
+    background-size: cover;
 }
 
 #section2 .inner .wrap3 .port-box > a:after{
@@ -311,56 +311,71 @@
     height: 200px;
     background-color: black;
     opacity: 0.4;
-    position: absolute;
-    top: 0;
+    transition: opacity 0.5s ease;
 }
 
 #section2 .inner .wrap3 .port-box > a:hover:after{
     opacity: 0;
 }
 
+#section2 .inner .wrap3 .port-box > a > img{
+    width: 100%;
+}
+
 #section2 .inner .wrap3 .port-box > p{
     font-size: 12px;
 }
 
-#section2 .inner .wrap3 .port-box .port{
-    width: 600px;
+#section2 .inner .wrap3 .port{
+    width: 800px;
     height: 580px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: #fff;
     position: absolute;
     top: 50%;
+    left: 50%;
     margin-top: -300px;
-    margin-left: -300px;
-    left: 50% ;
+    margin-left: -400px;
     z-index: 1;
     overflow: scroll;
     box-sizing:border-box;
+    display: none;
+}
+#section2 .inner .wrap3 .port.on{
+    display: block;
+    animation: slide 0.3s linear;
+
+}
+
+@keyframes slide{
+    from{ opacity: 0 ;}
+    to{ opacity: 1 ;}
+}
+
+#section2 .inner .wrap3 .port > img{
+    width: 80%;
 }
 
 /* 닫기버튼 */
-#section2 .inner .wrap3 .port-box .port > button{
+#section2 .inner .wrap3 .port button{
     border: 0;
     background: 0;
     position: absolute;
-    z-index: 3;
     top: 0;
     right: 0;
+    z-index: 3;
     width: 40px;
     height: 40px;
     overflow: hidden;
 
 }
-#section2 .inner .wrap3 .port-box .port > button:before{
+#section2 .inner .wrap3 .port > button:before{
     content: "⨯";
     display:inline-block;
     font-size: 40px;
-    margin-top: -10px;
+    margin-top: -15px;
+    position: fixed;
 }
-
-#section2 .inner .wrap3 .port-box .port > img{
-    width: 100%;
-}
-
 
 
 
