@@ -48,7 +48,7 @@
     display: inline-block;
     transform: translateY(20px);
     opacity: 0;
-    animation: ani1 0.3s ease-out forwards;
+    animation: ani1 0.1s ease-out forwards;
 }
 
 @keyframes ani1 {
@@ -92,14 +92,14 @@
 
 #section0 #intro-tx p:nth-child(1){
     font-size: 50px;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     -webkit-animation: ani1-1 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: ani1-1 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 #section0 #intro-tx p:nth-child(2){
     font-size: 50px;
-    animation-delay: 0.8s;
+    animation-delay: 1s;
     -webkit-animation: ani1-1 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: ani1-1 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
