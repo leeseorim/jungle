@@ -28,8 +28,7 @@ $(function(){
         $("#section2 .inner .wrap3 .port.port1").addClass("on");
         $("#section2 .back").addClass("on")
         
-        $("body").css({"overflow":"hidden", "height":"100%"});
-        $("body").bind('scroll touchmove mousewheel', function(e){
+        $("html body").bind('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
@@ -46,8 +45,7 @@ $(function(){
         $("#section2 .inner .wrap3 .port.port2").addClass("on");
         $("#section2 .back").addClass("on")
 
-        $("body").css({"overflow":"auto", "height":"auto"});
-        $("body").bind('scroll touchmove mousewheel', function(e){
+        $("html body").bind('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
@@ -63,8 +61,7 @@ $(function(){
         $(this).removeClass("on");  
         $("#section2 .back").removeClass("on")
 
-        $("body").css({"overflow":"auto", "height":"auto"});
-        $("body").unbind('scroll touchmove mousewheel');    
+        $("html body").unbind('scroll touchmove mousewheel');    
     });
     
 

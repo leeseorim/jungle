@@ -337,9 +337,10 @@
     margin-top: -300px;
     margin-left: -400px;
     z-index: 3;
-    overflow: scroll;
     box-sizing:border-box;
     display: none;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 #section2 .back{
