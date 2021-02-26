@@ -48,7 +48,7 @@
     display: inline-block;
     transform: translateY(20px);
     opacity: 0;
-    animation: ani1 0.1s ease-out forwards;
+    animation: ani1 0.3s ease-out forwards;
 }
 
 @keyframes ani1 {
