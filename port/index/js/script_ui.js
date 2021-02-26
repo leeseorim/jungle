@@ -9,16 +9,27 @@ $(function(){
     $("#section1 .inner .wrap1 .who > div").hide();
 
     $("#section1 .inner .wrap1 .who.who1 > h5> button").on("click",function(){
-        $("#section1 .inner .wrap1 .who.who1 > div").toggle();
+        $("#section1 .inner .wrap1 .who.who1 > div").toggle("slow");
 
     });
     $("#section1 .inner .wrap1 .who.who2 > h5> button").on("click",function(){
-        $("#section1 .inner .wrap1 .who.who2 > div").toggle();
+        $("#section1 .inner .wrap1 .who.who2 > div").toggle("slow");
 
     });
     $("#section1 .inner .wrap1 .who.who3 > h5> button").on("click",function(){
-        $("#section1 .inner .wrap1 .who.who3 > div").toggle();
+        $("#section1 .inner .wrap1 .who.who3 > div").toggle("slow");
 
+    });
+
+
+    $("#section2 .inner .wrap3 .port-box .port").hide();
+
+    $("#section2 .inner .wrap3 .port-box.port-box1").on("click",function(){
+        $("#section2 .inner .wrap3 .port-box .port.port1").toggle("slow");
+    });
+
+    $("#section2 .inner .wrap3 .port-box.port-box2").on("click",function(){
+        $("#section2 .inner .wrap3 .port-box .port.port2").toggle("slow");
     });
 
 });

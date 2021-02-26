@@ -150,7 +150,7 @@
 
 
 
-/* section1 */
+/* section1 : skill */
 #section1 .inner hr{
     position: absolute;
     width: 100%;
@@ -205,7 +205,7 @@
     text-align: center;
     box-sizing: border-box;
     position: absolute;
-    bottom: 15%;
+    bottom: 15%;;
 }
 
 #section1 .inner .wrap2 > .box{
@@ -275,6 +275,94 @@
     75%{ width: 30%;}
     100%{ width: 0px;}
 }
+
+/* section2 : portfolio */
+#section2 .inner .wrap3{
+    width : 100%;
+    position: absolute;
+    top: 30%;
+}
+#section2 .inner .wrap3 .port-box{
+    display: inline-block;
+    width: 160px;
+    margin: 0 30px;
+    box-sizing: border-box;
+
+}
+
+#section2 .inner .wrap3 .port-box > a{
+    background-color: brown;
+    display: block;
+    width: 160px;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#section2 .inner .wrap3 .port-box > a > img{
+    width: 100%;
+}
+
+#section2 .inner .wrap3 .port-box > a:after{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 200px;
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+
+#section2 .inner .wrap3 .port-box > a:hover:after{
+    opacity: 0;
+}
+
+#section2 .inner .wrap3 .port-box > p{
+    font-size: 12px;
+}
+
+#section2 .inner .wrap3 .port-box .port{
+    width: 600px;
+    height: 580px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    left: 50% ;
+    z-index: 1;
+    overflow: scroll;
+    box-sizing:border-box;
+}
+
+/* 닫기버튼 */
+#section2 .inner .wrap3 .port-box .port > button{
+    border: 0;
+    background: 0;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
+}
+#section2 .inner .wrap3 .port-box .port > button:before{
+    content: "⨯";
+    display:inline-block;
+    font-size: 40px;
+    margin-top: -10px;
+}
+
+#section2 .inner .wrap3 .port-box .port > img{
+    width: 100%;
+}
+
+
+
 
 /* 1006px */
 
