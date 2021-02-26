@@ -37,12 +37,12 @@ $(function(){
             
             return false;
             
-            })   
-
-        $("#section2 .inner .wrap3 .port").css({'overflow': 'scroll'});
+            })    
             
 
     });
+    
+    $("#section2 .inner .wrap3 .port.port1").unbind('scroll touchmove mousewheel');
 
     $("#section2 .inner .wrap3 .port-box2 > a").on("click",function(){
 
