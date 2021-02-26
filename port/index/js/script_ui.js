@@ -29,7 +29,7 @@ $(function(){
         $("#section2 .back").addClass("on")
 
         $("html, body").css({'overflow': 'hidden', 'height': '100%', 'position':'fixed'})
-        $("html, body").bind('scroll touchmove mousewheel', function(e){
+        $("html, body").on('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
@@ -39,7 +39,7 @@ $(function(){
             
             })    
             
-        // $("#section2 .inner .wrap3 .port").unbind('scroll touchmove mousewheel');
+        $("#section2 .inner .wrap3 .port").off('scroll touchmove mousewheel');
 
     });
 
@@ -51,7 +51,7 @@ $(function(){
         $("#section2 .back").addClass("on")
     
         $("html, body").css({'overflow': 'hidden', 'height': '100%', 'position':'fixed'})
-        $("html, body").bind('scroll touchmove mousewheel', function(e){
+        $("html, body").on('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
@@ -61,7 +61,7 @@ $(function(){
             
             })   
 
-        // $("#section2 .inner .wrap3 .port").unbind('scroll touchmove mousewheel');
+        $("#section2 .inner .wrap3 .port").off('scroll touchmove mousewheel');
 
     });
 
