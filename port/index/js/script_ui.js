@@ -29,7 +29,7 @@ $(function(){
         $("#section2 .back").addClass("on")
 
         
-        $("html, body").bind('scroll touchmove mousewheel', function(e){
+        $(".section").bind('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
             
