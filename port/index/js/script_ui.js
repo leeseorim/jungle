@@ -27,6 +27,7 @@ $(function(){
 
         $("#section2 .inner .wrap3 .port.port1").addClass("on");
         $("#section2 .back").addClass("on")
+
         
         $("html, body").bind('scroll touchmove mousewheel', function(e){
 
@@ -44,7 +45,7 @@ $(function(){
 
         $("#section2 .inner .wrap3 .port.port2").addClass("on");
         $("#section2 .back").addClass("on")
-
+    
         $("html, body").bind('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
@@ -56,6 +57,8 @@ $(function(){
             })   
 
     });
+
+    
 
     $("#section2 .inner .wrap3 .port").click(function(){
         $(this).removeClass("on");  

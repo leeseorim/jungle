@@ -277,6 +277,7 @@
 }
 
 /* section2 : portfolio */
+
 #section2 .inner .wrap3{
     width : 100%;
     position: absolute;
@@ -363,7 +364,6 @@
 #section2 .inner .wrap3 .port.on{
     display: block;
     animation: slide 1s linear;
-
 }
 
 @keyframes slide{
