@@ -336,11 +336,29 @@
     left: 50%;
     margin-top: -300px;
     margin-left: -400px;
-    z-index: 1;
+    z-index: 3;
     overflow: scroll;
     box-sizing:border-box;
     display: none;
 }
+
+#section2 .back{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    display: none;
+
+}
+#section2 .back.on{
+    display: block;
+}
+
 #section2 .inner .wrap3 .port.on{
     display: block;
     animation: slide 0.3s linear;

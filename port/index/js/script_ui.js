@@ -25,6 +25,7 @@ $(function(){
 
     $("#section2 .inner .wrap3 .port-box1 > a").on("click",function(){
         $("#section2 .inner .wrap3 .port.port1").addClass("on");
+        $("#section2 .back").addClass("on")
         
         $("body").on('scroll touchmove mousewheel', function(e){
 
@@ -40,6 +41,7 @@ $(function(){
 
     $("#section2 .inner .wrap3 .port-box2 > a").on("click",function(){
         $("#section2 .inner .wrap3 .port.port2").addClass("on");
+        $("#section2 .back").addClass("on")
         $("body").on('scroll touchmove mousewheel', function(e){
 
             e.preventDefault();
@@ -53,8 +55,8 @@ $(function(){
     });
 
     $("#section2 .inner .wrap3 .port").click(function(){
-
         $(this).removeClass("on");  
+        $("#section2 .back").removeClass("on")
 
         $("body").off('scroll touchmove mousewheel');    
     });
