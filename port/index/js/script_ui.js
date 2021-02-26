@@ -26,10 +26,32 @@ $(function(){
 
     $("#section2 .inner .wrap3 .port-box.port-box1").on("click",function(){
         $("#section2 .inner .wrap3 .port-box .port.port1").toggle("slow");
+        $("body").on('scroll touchmove mousewheel', function(e){
+
+            e.preventDefault();
+            
+            e.stopPropagation(); 
+            
+            return false;
+            
+            })
+            
     });
 
     $("#section2 .inner .wrap3 .port-box.port-box2").on("click",function(){
         $("#section2 .inner .wrap3 .port-box .port.port2").toggle("slow");
+        $("body").on('scroll touchmove mousewheel', function(e){
+
+            e.preventDefault();
+            
+            e.stopPropagation(); 
+            
+            return false;
+            
+            })
+            
     });
+
+    
 
 });
