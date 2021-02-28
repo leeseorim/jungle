@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="js/script_ui.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/comon.css">
 
 </head>
@@ -37,7 +39,7 @@
         <!-- section1 : skill -->
         <div class="section" id="section1">
             <div class="inner">
-                <div class="title">
+                <div class="title title1">
                     <h3>ABOUT ME</h3>
                 </div>
                 <div class="wrap wrap1 ">
@@ -94,58 +96,71 @@
 
         <!-- section2 : portfolio-->
         <div class="section" id="section2">
-            <div class="back"></div>
             <div class="inner">
-                <div class="title">
+                <div class="title title2">
                     <h3>PORTFOLIO</h3>
                     <p></p>
                 </div>
-                <div class="wrap3">
-                    <div class="port-box port-box1">
-                        <a href="#port1"></a>
-                        <p>Accessory Lookboook Layout</p>
-                    </div>
-
-                    <div class="port-box port-box2">
-                        <a href="#port2"></a>
-                        <p>Detail page Layout</p>
-                    </div>
-
-                    <div class="port-box port-box3">
-                        <a href="#port3"></a>
-                        <p>boostcamp site</p>
-                    </div>
-
-                    <div class="port-box port-box4">
-                        <a href="#port4"></a>
-                        <p>백종원쌈밥집 site</p>
-                    </div>
+                <div class="wrap-photo">
+                    <ul>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+						<li>
+                            <a href=""></a>
+						</li>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+                    <span class="cursor"></span>
                 </div>
+                <!-- wrap-photo -->
 
-                
-                <div class="iframe iframe1">
-                    <iframe src="port1/accessory.html"></iframe>
-                    <button><span class="blind">닫기버튼</span></button>
-                </div>
-                <div class="iframe iframe2">
-                    <iframe src="port2/detail_page.html"></iframe>
-                    <button><span class="blind">닫기버튼</span></button>
-                </div>
-                
+				<!-- 텍스트 부분 -->
 
-
-
+                <div class="wrap-txt">
+					<ul>
+						<li class="select">first</li>
+						<li>second</li>
+						<li>third</li>
+						<li>4th</li>
+					</ul>
+				</div>
             </div>
         </div>
 
         <!-- section3 : contact-->
         <div class="section" id="section3">
-            <div class="inner">
-                <div class="title">
-                    <h3>CONTACT</h3>
-                    <p></p>
-                </div>
+            
 
+                <!-- 텍스트 애니메이션 영역 -->
+				<div class="wrap-typo">
+					<div class="wrap-typo-inner">
+						<!-- <span>a</span> -->
+					</div>
+				</div>
+				<!-- input영역 -->
+				<div class="wrap-input">
+					<form>
+						<div class="group ani-obj on-1">
+							<input type="text">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Name</label>
+						</div>
+						<div class="group ani-obj on-2">
+							<input type="text">
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Email</label>
+						</div>
+					</form>
+				</div>
+			
             </div>
         </div>
  
