@@ -67,7 +67,7 @@ $(function(){
     //슬릭 슬라이드 플러그인
     $("#section2 .inner .wrap-photo > ul").slick({
         dots:false, //하단 페이저 도트(점) 제거
-        // arrows:false, //좌우 버튼 제거
+        arrows:false, //좌우 버튼 제거
         slidesToShow:3, //한화면 보여지는 이미지 갯수
         SlidesToScroll:1, //좌우 이벤트를 통해서 움직이는 갯수
         variableWidth:true, //이미지(오브젝트가) 고정 값일 경우 겸침현상을 해결하기 위한 옵션
