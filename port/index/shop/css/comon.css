@@ -305,15 +305,28 @@
     background-size: cover;
 }
 
+#section2 .inner .wrap3 .port-box3 > a{
+    background-image:url(../img/port-img3.jpg);
+    background-size: cover;
+}
+
+#section2 .inner .wrap3 .port-box4 > a{
+    background-image:url(../img/port-img4.jpg);
+    background-size: cover;
+}
+
 #section2 .inner .wrap3 .port-box > a:after{
-    content: "";
+    content: "more";
+    text-transform: bottom;
+    color: #fff;
     display: block;
     width: 160px;
     height: 200px;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.3;
     transition: opacity 0.5s ease;
 }
+
 
 #section2 .inner .wrap3 .port-box > a:hover:after{
     opacity: 0;
@@ -327,23 +340,33 @@
     font-size: 12px;
 }
 
-#section2 .inner .wrap3 .port{
-    width: 800px;
-    height: 580px;
-    border-radius: 10px;
-    background-color: #fff;
+/* iframe */
+#section2 .inner .iframe{
+    width: 1000px;
+    height: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -320px;
-    margin-left: -400px;
-    z-index: 3;
-    box-sizing:border-box;
+    margin-top: -300px;
+    margin-left: -500px;
     display: none;
-    overflow: hidden;
-    overflow-y: scroll;
+    /* border: 1px solid black; */
 }
 
+#section2 .inner .iframe > iframe{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+#section2 .inner .iframe.on{
+    display: block;
+}
+
+
+/* 포트폴리오 백그라운드 블랙 */
 #section2 .back{
     content: "";
     display: block;
@@ -361,41 +384,149 @@
     display: block;
 }
 
-#section2 .inner .wrap3 .port.on{
-    display: block;
-    animation: slide 1s linear;
-}
-
-@keyframes slide{
-    from{ opacity: 0 ;}
-    to{ opacity: 1 ;}
-}
-
-#section2 .inner .wrap3 .port > img{
-    width: 60%;
-}
-
 /* 닫기버튼 */
-#section2 .inner .wrap3 .port button{
+#section2 .inner .iframe button{
     border: 0;
     background: 0;
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 10;
     width: 40px;
     height: 40px;
     overflow: hidden;
 
 }
-#section2 .inner .wrap3 .port > button:before{
+#section2 .inner .iframe button:before{
     content: "⨯";
     display:inline-block;
     font-size: 40px;
-    margin-top: -15px;
+    margin-top: -10px;
     position: fixed;
 }
 
+/* section3 : contact */
+
+
+/* 타이핑 텍스트 */
+#section3 .wrap-typo{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin: -180px 0 0 -1150px;
+}
+#section3 .wrap-typo .wrap-typo-inner{
+    position: relative;
+}
+#section3 .wrap-typo .wrap-typo-inner > span{
+    position: absolute;
+    display: inline-block;
+    top:0;
+    left:600px;
+    font-size:200px
+}
+/* 타이핑 텍스트를 움직이게 하기 위한 animation설정(움직이는 경로가 되는 라인정보(svg)) */
+#section3 .wrap-typo .wrap-typo-inner > span.ani-0{
+    animation: key_ani0 1s linear forwards; 
+    motion-path: path("m568.5,256.453125c-41,-79 -138,-113 -270,-92c-132,21 -261,94 -280,129");
+    offset-path: path("m568.5,256.453125c-41,-79 -138,-113 -270,-92c-132,21 -261,94 -280,129");
+}
+/* 타이핑 텍스트를 svg 라인정보대로 움직이게 하는 키프레임 */
+@keyframes key_ani0{
+    0%{offset-distance:0%; opacity: 1;}
+    100%{offset-distance:100%; opacity: 0;}
+}
+/* 타이핑 텍스트를 움직이게 하기 위한 animation설정(움직이는 경로가 되는 라인정보(svg)) */
+#section3 .wrap-typo .wrap-typo-inner > span.ani-1{
+    animation: key_ani1 1s linear forwards; 
+    motion-path: path("m560.5,49.453125c-26,-42 -203,-70 -274,34c-71,104 -107,302 -107.5,301.546875");
+    offset-path: path("m560.5,49.453125c-26,-42 -203,-70 -274,34c-71,104 -107,302 -107.5,301.546875");
+}
+/* 타이핑 텍스트를 svg 라인정보대로 움직이게 하는 키프레임 */
+@keyframes key_ani1{
+    0%{offset-distance:0%; opacity: 1;}
+    100%{offset-distance:100%; opacity: 0;}
+}
+/* 타이핑 텍스트를 움직이게 하기 위한 animation설정(움직이는 경로가 되는 라인정보(svg)) */
+#section3 .wrap-typo .wrap-typo-inner > span.ani-2{
+    animation: key_ani2 1s linear forwards; 
+    motion-path: path("m559.5,353.453125c-28,-127 -100,-281 -221,-300c-121,-19 -274,206 -293,314");
+    offset-path: path("m559.5,353.453125c-28,-127 -100,-281 -221,-300c-121,-19 -274,206 -293,314");
+}
+/* 타이핑 텍스트를 svg 라인정보대로 움직이게 하는 키프레임 */
+@keyframes key_ani2{
+    0%{offset-distance:0%; opacity: 1;}
+    100%{offset-distance:100%; opacity: 0;}
+}
+
+
+/* 입력부분 */
+
+#section3 .wrap-input{
+    position: absolute;
+    left:50%;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background: #272d39;
+}
+#section3 .wrap-input > form{
+    position: absolute;
+    left: 0%;
+    top:50%;
+    margin: -80px 0 0 30px;
+}
+#section3 .wrap-input > form .group{
+    position: relative;
+    margin-bottom: 45px;
+}
+#section3 .wrap-input > form .group > input{
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+    width: 300px;
+    border:0;
+    background-color: transparent; /*투명색*/
+    border-bottom: 1px solid #757575;
+    color: #fff;
+    outline:none;
+}
+#section3 .wrap-input > form .group .highlight{}
+#section3 .wrap-input > form .group .bar{
+    position: relative;
+    display: block;
+    width:300px;
+}
+#section3 .wrap-input > form .group .bar:before,
+#section3 .wrap-input > form .group .bar:after{
+    content: '';
+    height:2px;
+    width: 0px;
+    bottom:0;
+    position: absolute;
+    background: #fff;
+    transition: width 0.2s;
+}
+#section3 .wrap-input > form .group .bar:before{
+    left:50%
+}
+#section3 .wrap-input > form .group .bar:after{
+    right:50%
+}
+
+/* input에 커서가 이동했을때 */
+#section3 .wrap-input > form .group > input:focus ~ .bar:before,
+#section3 .wrap-input > form .group > input:focus ~ .bar:after{
+    width:150px;
+}
+
+#section3 .wrap-input > form .group > label{
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    left: 0px;
+    top:-20px;
+}
 
 
 /* 1006px */
@@ -412,7 +543,6 @@
         z-index: 3;
         box-sizing:border-box;
         display: none;
-        overflow: hidden;
-        overflow-y: scroll;
+        overflow: scroll;
     }
 }
