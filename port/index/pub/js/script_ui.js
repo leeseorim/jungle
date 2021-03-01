@@ -66,7 +66,7 @@ $(function(){
     //portfolio
     //슬릭 슬라이드 플러그인
     $("#section2 .inner .wrap-photo > ul").slick({
-        dots:false, //하단 페이저 도트(점) 제거
+        dots:true, //하단 페이저 도트(점) 제거
         arrows:false, //좌우 버튼 제거
         slidesToShow:3, //한화면 보여지는 이미지 갯수
         SlidesToScroll:1, //좌우 이벤트를 통해서 움직이는 갯수
@@ -75,21 +75,10 @@ $(function(){
     }).on("afterChange",function(event, slick, current){ //슬라이드가 한번 발생 후 이벤트 호출 (current : 순번(index))
         $("#section2 .inner .wrap-txt > ul > li").removeClass("select");//초기화
         $("#section2 .inner .wrap-txt > ul > li").eq(current).addClass("select"); //해당순번에 select(등장클래스) 적용
+
+
     })
     
-
-  
-
-  
-
-    
-    
-
-
-
-
-   
-
 
         
 

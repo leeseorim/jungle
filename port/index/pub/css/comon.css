@@ -339,12 +339,68 @@
     /* position: relative; */
 }
 
+
 #section2 .inner .wrap-photo .slick-slide a{
     display: block;
-    width: 860px;
-    height: 520px;
+    width: 600px;
+    height: 300px;
     background-color: wheat;
+    
 }
+
+#section2 .inner .wrap-photo .slick-slide a img{
+    width: 100%;
+}
+
+.slick-dots{
+    margin-top: 10px;
+}
+
+.slick-dots > li{
+    display: inline-block;
+    width: 15px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 5px;
+    position: relative;
+}
+
+.slick-dots > li:after{
+    content: "-";
+    display: inline-block;
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    /* border: 1px solid black; */
+}
+
+.slick-dots > li > button{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots > li.slick-active > button{
+    text-indent: -999px;
+}
+
+.slick-dots > li.slick-active:after{
+    display: block;
+}
+
+
+
+
+
+
+
 
 #section2 .inner .wrap-txt{
     position: absolute;
@@ -352,7 +408,6 @@
     left: 0;
     right: 0;
     text-align: center;
-    margin-top:224px ;
     opacity: 0;
 }
 
@@ -362,25 +417,24 @@
 
 @keyframes drop3-2 {
     from{ opacity:0 ; bottom:0;}
-    to{  opacity:1 ; bottom:10%;}
+    to{  opacity:1 ; bottom:12%;}
 }
 
 
 #section2 .inner .wrap-txt > ul{
     position: relative;
-    height: 95px;
+    height: 40px;
     overflow: hidden;
 }
 #section2 .inner .wrap-txt > ul > li{
-    font-size: 86px;
-    font-weight: bold;
+    font-size: 25px;
     position: absolute;
     top:95px;
     width:100%;
     transition:top .5s ease-in-out;
 }
 #section2 .inner .wrap-txt > ul > li.select{
-    top:0;
+    top:0px;
 }
 
 /* 갤러리 위치시 커서 없앰
@@ -568,4 +622,3 @@
     }
 }
 
-}
