@@ -592,7 +592,7 @@
 @media all and (max-width:414px) {
     #fp-nav {
         left: 50%;
-        margin-left: -175px;
+        margin-left: -165.3px;
         opacity: 1; -moz-opacity: 1; filter: alpha(opacity=100);
         transform: translate3d(0,0,0);
             -webkit-transform: translate3d(0,0,0);
@@ -602,7 +602,7 @@
             margin-top:-49px !important;
     }
     #fp-nav ul li{
-        margin: 0px 20px;
+        margin: 0px 15px;
     }
 
     .section .inner .title{
