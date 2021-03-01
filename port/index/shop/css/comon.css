@@ -281,7 +281,7 @@
 #section2 .inner .wrap3{
     width : 100%;
     position: absolute;
-    top: 30%;
+    top: 18%;
 }
 #section2 .inner .wrap3 .port-box{
     display: inline-block;
@@ -470,11 +470,30 @@
     bottom: 0;
     background: #272d39;
 }
+
+#section3 .wrap-input .title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -180px 0 0 30px;
+    color: #fff;
+}
+#section3 .wrap-input .title h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    
+}
+
+#section3 .wrap-input .title p{
+    margin-bottom: 10px;
+}
+
+
 #section3 .wrap-input > form{
     position: absolute;
     left: 0%;
-    top:50%;
-    margin: -80px 0 0 30px;
+    top:75%;
+    margin: -180px 0 0 30px;
 }
 #section3 .wrap-input > form .group{
     position: relative;
@@ -491,7 +510,7 @@
     color: #fff;
     outline:none;
 }
-#section3 .wrap-input > form .group .highlight{}
+
 #section3 .wrap-input > form .group .bar{
     position: relative;
     display: block;
