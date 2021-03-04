@@ -1,6 +1,6 @@
 $(function(){
     $("#fullpage").fullpage({
-        sectionsColor:["#dffaff","#fefffa","#dfffea","#eee"],
+        sectionsColor:["#dffaff","#fefffa","#fefffa","#eee"],
         navigation: true,
         navigationTooltips:["Home","About me","Portfolio","Contact"],
         anchors:["home","about_me","portfolio","contact"],
