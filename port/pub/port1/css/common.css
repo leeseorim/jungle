@@ -470,7 +470,7 @@ footer div #sns a:nth-child(4):hover svg{
         position: absolute;
         top:0;
         left:0;
-        width: 100vh;
+        width: 100%;
         height: 100vh;
         background-color: black;
         opacity: 0.5;
@@ -568,9 +568,7 @@ footer div #sns a:nth-child(4):hover svg{
     }   
 
     /* mo section2  */
-    .secrion2{
 
-    }
 
     .section2 article{
         width: 70%;
@@ -594,6 +592,9 @@ footer div #sns a:nth-child(4):hover svg{
 }
 
 @media all and (max-width:414px) {
+        *{
+        max-width: 414px;
+        }
         .section1 .main.inner1 .main_a h2 {
             margin: 0;
         }
