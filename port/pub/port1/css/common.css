@@ -10,6 +10,7 @@ body{
     display: none;
 }
 
+
 .inner1{
     width: 70%;
     margin: 0 auto;
@@ -27,6 +28,7 @@ section{
 }
 
 section h2{
+    margin: 0 0 25px;
     font-size: 30px;
     text-align: center;
 } 
@@ -35,22 +37,13 @@ section h2{
 a:link {
     color:black;
     text-decoration: none;
-  }
-/*   
-  visited link
-  a:visited {
-    color: black
-  } */
-  
+}
   /* mouse over link */
-  a:hover {
+a:hover {
     color: #5a96ff;
   }
   
-  /* selected link */
-  a:active {
-    color: blueviolet;
-  }
+
 
 /* header */
 header nav{
@@ -86,7 +79,7 @@ header nav ul li{
     padding: 0 20px;
 }
 
-header nav ul .sup_btn{
+header nav ul .sup_btn1{
     background-color: white;
     color: black;
     padding: 10px 16px;
@@ -95,7 +88,7 @@ header nav ul .sup_btn{
     transition: all 0.3s;
 }
 
-header nav ul .sup_btn:hover{
+header nav ul .sup_btn1:hover{
     background-color: #5a96ff;
     color: white;
     
@@ -109,31 +102,29 @@ header nav ul li a{
     color: white;
 }
 
+
+
 /* section1 */
 .section1{
     background-image: url(../img/BgMainCont.svg), 
-    linear-gradient(to bottom, #171717, #19181c 87%, #241e42 97%, #5a96fc 104%);
-    height: 800px;
+    linear-gradient(to bottom, #171717, #19181c 80%, #241e42 97%, #5a96fc 108%);
+    height: 700px;
 }
 .section1 .main.inner1{
     clear: both;
-    height: 650px;
+    height: 600px;
     position: relative;
 }
 .section1 .main.inner1 .main_a{
     position: absolute;
     width: 100%;
-    top: 23%;
-    text-align: center;
+    top: 22%;
 }
 
 .section1 .main.inner1 .main_a h2{
-    background-image:  url(../img/ImgMainTopText.png);
     width: 100%;
     height: 300px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background: url(../img/ImgMainTopText.png) center/contain no-repeat;
     opacity: 0;
     margin-bottom: 30px;
     animation: ani1 1.5s 0.5s forwards;
@@ -150,9 +141,11 @@ header nav ul li a{
 
 
 .section1 .main.inner1 .main_a .sup_btn2{
+    
     display: block;
     width: 100px;
     margin: 0 auto;
+    padding-left: 10px;
     color: #5a96ff;
     font-size: 20px;
     position: relative;
@@ -189,11 +182,11 @@ header nav ul li a{
 
 .section1 .main.inner1 .main_a .sup_btn2:before{
     content:"→";
-    font-size: 40px;
+    font-size: 30px;
     display: inline-block;
     position: absolute;
-    top: -16px;
-    left: -30px;
+    top: -8px;
+    left: -10px;
 
 }
 
@@ -208,13 +201,12 @@ header nav ul li a{
 .section1 .main.inner1 .main_c{
     color: white;
     position: absolute; 
-    bottom: 0;
+    bottom: 20px;
     right: 0;
     text-align: right;
 }
 
 /* section2 */
-.section2:after{ content: ""; display: block; clear: both;}
 .section2.inner2{
     opacity: 0;
     transform: translateY(320px);
@@ -231,12 +223,14 @@ header nav ul li a{
     width: 33.3%;
     float: left;
     height: 300px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 50px;
+    background: center 50px no-repeat;
     padding: 170px 10px 0 10px;
     box-sizing: border-box;
 }
+
+.section2 article:nth-child(1){background-image: url(../img/ImgMainStep1.svg);}
+.section2 article:nth-child(2){background-image: url(../img/ImgMainStep2.svg);}
+.section2 article:nth-child(3){background-image: url(../img/ImgMainStep3.svg);}
 
 .section2 div article:nth-child(1) > .txt > br{
     display: none;
@@ -246,21 +240,10 @@ header nav ul li a{
     display: block;
 }
 
-.section2 article:nth-child(1){background-image: url(../img/ImgMainStep1.svg);}
-.section2 article:nth-child(2){background-image: url(../img/ImgMainStep2.svg);}
-.section2 article:nth-child(3){background-image: url(../img/ImgMainStep3.svg);}
-
+.section2:after{ content: ""; display: block; clear: both;}
 
 /* section4 */
-.section4.inner2 div{
-    background-image: url(../img/IcoGuideList2.svg);
-    height: 300px;
-    padding-top: 170px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 50px;
-    box-sizing: border-box;
-}
+
 
 .section4.inner2{
     opacity: 0;
@@ -274,6 +257,12 @@ header nav ul li a{
 
 }
 
+.section4.inner2 div{
+    height: 300px;
+    padding-top: 170px;
+    background: url(../img/IcoGuideList2.svg) center 50px no-repeat;
+    box-sizing: border-box;
+}
 
 /* section3 section5 */
 .lay1:before{
@@ -283,6 +272,7 @@ header nav ul li a{
     height: 100%;
     background-color: rgba(00,00,00,0.3);
 }
+
 
 .section3.lay1{background-image: url(../img/ImgOrgMain1.jpg);}
 .section5.lay1{background-image: url(../img/ImgOrgMain2.jpg);}
@@ -302,16 +292,19 @@ header nav ul li a{
     box-sizing: border-box;
     top: 37%;
     left: 50%;
+    width: 450px;
     margin-left:-225px;
 } 
 
 .lay1 div h2{
-    width: 450px;
     color: white;
 }
 
+.lay1 div h2 br{
+    display: none;
+}
+
 .lay1 div a{
-    /* border: 1px solid red; */
     padding: 15px 30px;
     background-color: #5a96ff;
     display: inline-block;
@@ -330,75 +323,302 @@ footer{
     line-height: 100px;
 }
 
-footer .foo{
-    text-align: center;
-    position: relative;
-}
-
-footer .foo p{
-    display: inline-block;
+footer div p{
+    float: left;
+    width: 45%;
     margin: 0;
-    position: absolute;
-    left: 0;;
 }
-
-footer .foo .contact {
-    position: absolute;
-    right: 0;
-}
-
-footer .foo address{
+footer div .contact{
     display: inline-block;
+    width: 35%;
 }
 
-footer .foo #sns{
-    display: inline-block;
-    padding-left: 30px;
+footer div #sns{
+    float: right;
+    text-align: right;
+    width: 20%;
 }
 
-footer .foo .contact #sns a:nth-child(1):hover svg{ 
+
+footer div #sns a:nth-child(1):hover svg{ 
     fill:#1d7bef;
 }
-footer .foo .contact #sns a:nth-child(2):hover svg{
+footer div #sns a:nth-child(2):hover svg{
     fill:#dd2a7b;
 }
-footer .foo .contact #sns a:nth-child(3):hover svg{
+footer div #sns a:nth-child(3):hover svg{
     fill:#04cf5c;
 }
-footer .foo .contact #sns a:nth-child(4):hover svg{
+footer div #sns a:nth-child(4):hover svg{
     fill:#999;
 } 
 
-/* 946px 일때 텍스트 값 */
+
+/* 1183px 일때 텍스트 값 */
 @media all and (max-width:1183px) {
     .section2 article .txt > br{
         display: none;
     }
 };
 
-@media all and (max-width:1024px) {
-    .lay{ background-attachment: scroll;}
+
+@media all and (max-width:1072px) {
+    .section2 article .txt > br{
+        display: none;
+    }
+
+    footer div p{width: 40%;}
+    footer div .contact{width: 40%;}
+    footer div #sns{width: 15%;}
+}
+
+@media all and (max-width:1072px) {
+    footer div{
+        line-height: normal;
+    }
+
+    footer div p{
+        margin-top: 30px;
+        float: none;
+        width: 100%;
+    }
+    footer div .contact{
+        margin-top: 15px;
+        width: 60%;
+        float: left;
+        line-height: normal;
+        
+    }
+    footer div #sns{
+        margin-top: 15px;
+        float: none;
+        width: 100%;
+    }
 }
 
 @media all and (max-width:919px) {
     .section2 div article:nth-child(1) > .txt > br{
-        display: block; 
-    }
-
-} 
-
-@media all and (max-width:889px) {
-    footer{
-        height: 100px;
-    }
-
-    footer .foo{
-        line-height: 50px;
-    }
-
-    footer .foo .contact{
-        width:400px;
-        float: inherit;;
+        display: block;
     }
 }
 
+@media all and (max-width:821px) {
+    .section2.inner2{
+        width: 90%;
+    }
+    
+}
+
+/* 768px 아이패드 사이즈 */
+@media all and (max-width:768px) {
+    /* 768 ul 버튼 */
+    #menuView, #menuClose{
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+        width: 40px;
+        height: 40px;
+
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+    }
+
+    #menuClose{
+        z-index: 100;
+        display: none;
+    }
+
+    #menuView span{
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+        margin: 7px 0;
+        transition: all 0.5s;
+    }
+
+    #menuView:hover span:nth-child(1){
+        transform: translateY(10px) rotate(225deg);
+    }
+    #menuView:hover span:nth-child(2) {
+        opacity: 0;
+    }
+    #menuView:hover span:nth-child(3){
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    #menuClose span{ 
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        height: 3px;
+        transition: all 0,5s;
+
+    }
+
+    #menuClose span:nth-child(1){
+        transform: translateY(1.5px) rotate(45deg);
+    }
+    #menuClose span:nth-child(2){
+        transform: translateY(-1.5px) rotate(-45deg);
+    }
+
+    #back{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100vh;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+
+    header nav ul{
+        display: none;
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        height: 100vh;
+        background-color: #477ec2;
+        margin-top: 0;
+        z-index: 10;
+
+    }
+
+    header nav ul li{
+        display: block;
+        margin: 50px 20px ;
+    }
+    
+    header nav ul .sup_btn1{
+        margin-left: 30px;
+    }
+
+    
+    /* 768 section1 */
+    .section1 .main.inner1{
+        padding-top: 100px;
+    }
+    .section1 .main.inner1 .main_a{
+        width: 500px;
+        top: 30%;
+        left: 50%;
+        margin-left: -250px;
+    }
+
+    .section1 .main.inner1 .main_a h2{
+        margin-bottom: 20px;
+    }
+
+    .section1 .main.inner1 .main_a .sup_btn2{
+        font-size: 16px;
+    }
+
+    .section1 .main.inner1 .main_a .sup_btn2:before{
+        font-size: 25px;
+        top: -6px;
+        left: -10px;
+    }
+
+    .section1 .main.inner1 p{
+        font-size: 14px;
+    }
+    
+    .section1 .main.inner1 .main_b{
+        top: 100px;
+    }
+    
+    .section1 .main.inner1 .main_c{
+        bottom: 30px;   
+    }
+}
+
+@media all and (max-width:730px) {
+    .section2.inner2 h2{
+        margin: 0;
+    }
+}
+
+@media all and (max-width:624px) {
+    footer div #sns {
+        margin-top: 40px;
+    }
+}
+
+/* 모바일 */
+
+    /* mo section1 */
+
+@media all and (max-width:557px) {
+    .section1{
+        height: 730px;
+    }
+    .section1 .main.inner1 .main_a{
+        width: 400px;
+        margin-left: -200px;
+    }
+
+    .section1 .main.inner1 .main_a h2{
+        background: url(../img/ImgMainTopTextMobile.png) center/contain no-repeat;
+    }   
+
+    /* mo section2  */
+    .secrion2{
+
+    }
+
+    .section2 article{
+        width: 70%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .section2 div article .txt {
+        border-bottom: 0.5px solid rgb(167, 167, 167);
+        padding-bottom: 30px;
+    }
+
+    .section2 div article:nth-child(3) .txt {
+        border: 0;
+        padding-bottom: 0;
+    }
+
+    .section2 div article:nth-child(1) > .txt > br{
+        display: block;
+    }
+}
+
+@media all and (max-width:414px) {
+        .section1 .main.inner1 .main_a h2 {
+            margin: 0;
+        }
+
+        .section1 .main.inner1 .main_a {
+            width: 350px;
+            margin-left: -175px;
+        }
+
+        .section1 .main.inner1 > p {
+            font-size: 13px;
+        }
+
+        .section1 .main.inner1 .main_b {
+            top: 130px;
+            left: -20px;
+        }
+        .section1 .main.inner1 .main_c {
+            bottom: 60px;
+            right: -20px;
+
+        }
+
+        .lay1 div h2 br{
+            display: block;
+        }
+
+}

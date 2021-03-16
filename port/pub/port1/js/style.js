@@ -44,5 +44,17 @@ $(function(){
 
     }); 
 
+    $("#menuView").click(function(){
+        $("header nav ul").slideDown();
+        $("#menuClose").show();
+        $("#back").show();
+    })
+
+    $("#menuClose").click(function(){
+        $("header nav ul").slideToggle();
+        $("#back").hide();
+        $("#menuClose").fadeToggle();
+    })
+
 
 });
