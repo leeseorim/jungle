@@ -592,9 +592,6 @@ footer div #sns a:nth-child(4):hover svg{
 }
 
 @media all and (max-width:414px) {
-        *{
-        max-width: 414px;
-        }
         .section1 .main.inner1 .main_a h2 {
             margin: 0;
         }
@@ -622,4 +619,21 @@ footer div #sns a:nth-child(4):hover svg{
             display: block;
         }
 
+}
+
+@media all and (max-width:375px) {
+    .section2, .section4{
+        max-width: 375px;
+    }
+    footer {
+        max-width: 375px;
+        height: 150px;
+    }
+    footer div .contact {
+        float: none;
+    }
+
+    footer div #sns {
+        margin: 20px 0;
+    }
 }
