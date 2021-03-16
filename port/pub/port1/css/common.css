@@ -434,7 +434,7 @@ footer div #sns a:nth-child(4):hover svg{
     #menuView span{
         display: block;
         background-color: #fff;
-        width: 100%;
+        width: 30px;
         height: 3px;
         margin: 7px 0;
         transition: all 0.5s;
@@ -453,7 +453,7 @@ footer div #sns a:nth-child(4):hover svg{
     #menuClose span{ 
         display: block;
         background-color: #fff;
-        width: 100%;
+        width: 30px%;
         height: 3px;
         transition: all 0,5s;
 
