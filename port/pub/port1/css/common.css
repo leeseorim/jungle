@@ -484,7 +484,7 @@ footer div #sns a:nth-child(4):hover svg{
         display: none;
         position: absolute;
         right: 0px;
-        width: 200px;
+        width: 300px;
         height: 100vh;
         background-color:#5a96ff;
         color: #fff;
@@ -503,7 +503,7 @@ footer div #sns a:nth-child(4):hover svg{
     }
     
     header nav ul .sup_btn1{
-        margin-left: 30px;
+        margin-left: 5px;
     }
 
     header nav ul .sup_btn1:hover{
