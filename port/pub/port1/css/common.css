@@ -497,10 +497,20 @@ footer div #sns a:nth-child(4):hover svg{
         display: block;
         margin: 50px 20px ;
     }
+
+    header nav ul li a:hover{
+        color:black;
+    }
     
     header nav ul .sup_btn1{
         margin-left: 30px;
     }
+
+    header nav ul .sup_btn1:hover{
+        background-color: black
+    }
+
+    
 
     
     /* 768 section1 */

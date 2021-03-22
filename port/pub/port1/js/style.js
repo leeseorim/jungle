@@ -44,6 +44,23 @@ $(function(){
 
     }); 
 
+
+    var myMenuClose = function(){
+        $("header nav ul").hide();
+        $("#back").hide();
+        $("#menuClose").hide();
+    }
+
+    $(window).on("resize", function(){
+        console.log("리사이즈")
+        if($(window).width() > 768) {
+            $("header nav ul").show();
+        } else {
+            myMenuClose();
+        };
+    });
+
+
     $("#menuView").click(function(){
         $("header nav ul").slideDown();
         $("#menuClose").show();
@@ -55,6 +72,7 @@ $(function(){
         $("#back").hide();
         $("#menuClose").fadeToggle();
     })
+
 
 
 });
