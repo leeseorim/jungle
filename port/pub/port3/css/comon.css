@@ -1,0 +1,96 @@
+/* layout */
+
+
+/* 로그인 */
+header{
+    width: 100%;
+    height: 120px;
+    background: url(../img/bg_header.png)
+}
+header .wrap{
+    width: 1060px;
+    margin: 0 auto;
+}
+header .wrap .login{
+    text-align: right;
+}
+header .wrap .login ul{
+    height: 44px;
+    line-height: 44px;
+}
+header .wrap .login ul li{
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+header .wrap .login ul li a{
+    font-size: 12px;
+    color: #9f9f9f;
+    font-family: Arial, '나눔바른고딕', '돋음';
+}
+
+header .wrap .login ul .login-s{
+    text-align: left;
+    position: relative;
+    padding-right: 0;
+    width: 75px;
+}
+
+header .wrap .login ul .login-s > a::after{
+    content: "";
+    background-image: url(../img/ico_gnb_updown.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    right: 10px;
+}
+
+header .wrap .login ul .login-s > ul{
+    width: 80px;
+    border-radius: 5px;
+    line-height: 1.5;
+    height: 65px;
+    margin-top: -35px;
+    margin-left: -10px;
+    padding: 25px 0px 0px 10px;
+    background-image: url(../img/bg_gnb_cscenter.png);
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    
+}
+
+
+header .wrap .login ul .login-s > ul li{
+    display: block; 
+    padding: 0;
+}
+
+header .wrap .login ul .login-s > ul li a{
+}
+
+
+
+
+
+/* 로고 */
+header h1{}
+
+/* 대 메뉴 */
+header nav{}
+header nav .gnb{}
+header nav .gnb li{}
+header nav .gnb li a{}
+
+header nav .gnb li .gnb-s{}
+header nav .gnb li .gnb-s li{}
+
+
+
+
+
+
