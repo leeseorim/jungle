@@ -18,5 +18,11 @@ $(function(){
         $("header nav .gnb li .gnb-s").hide();
         $("header .nav.on").removeClass("on");
     });
+
+
+
+    $("#section1 .slider").bxSlider({
+        auto: true, speed: 500, pause: 4000, pager:false
+        });
     
 });
